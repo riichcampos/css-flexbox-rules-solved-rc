@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/authentication-form.css" />
+    <script src="/js/scripts.js" defer></script>
     <title>Login and Signup</title>
   </head>
   <body class="bg-white">
@@ -32,6 +33,7 @@
           <div class="form-input-control">
             <label for="login-field">Login</label>
             <input
+              name="login"
               type="email"
               id="login-field"
               placeholder="use your email as login"
@@ -41,10 +43,12 @@
           <div class="form-input-control">
             <label for="password-field">Password</label>
             <input
+              name="password"
               type="password"
               id="password-field"
               placeholder="passwords must match"
               minlength="8"
+              maxlength="20"
               required
             />
           </div>
@@ -70,6 +74,7 @@
           <div class="form-input-control">
             <label for="name-field">Your name</label>
             <input
+              name="sign-up-name"
               type="text"
               id="name-field"
               minlength="5"
@@ -80,6 +85,7 @@
           <div class="form-input-control">
             <label for="email">Email</label>
             <input
+              name="email"
               type="email"
               id="email"
               placeholder="name@domain.zone"
@@ -89,6 +95,7 @@
           <div class="form-input-control">
             <label for="password">Password</label>
             <input
+              name="sign-up-password"
               type="password"
               id="password"
               placeholder="8 characters minimum"
@@ -100,6 +107,7 @@
           <div class="form-input-control">
             <label for="confirm-password">Confirm Password</label>
             <input
+              name="sign-up-confirm-password"
               type="password"
               id="confirm-password"
               placeholder="passwords must match"
@@ -111,11 +119,14 @@
           <div class="form-input-control">
             <label for="phone">Phone number</label>
             <input
+              name="phone-number"
               type="tel"
               id="phone"
               minlength="12"
               maxlength="12"
               placeholder="ex.: +12336456355"
+              pattern="^\+\d{11}$"
+              required
             />
           </div>
           <div class="form-input-control">
@@ -144,7 +155,7 @@
           </div>
           <div class="form-input-control">
             <p>Gender</p>
-            <div class="form-group-vertical-control">
+            <div class="form-group-vertical-control" id="gender">
               <div class="form-radio-control">
                 <input type="radio" id="male" name="gender" value="male" />
                 <label for="male">Male</label>

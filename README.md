@@ -126,14 +126,14 @@ For the "Sign Up Form"
 
 Acceptance criteria:
 
-- [ ] Edit the following files:
-  - [ ] css: `/css/ecommerce-page.css`
-- [ ] Ensure the layout closely mirrors the mockup.
-- [ ] Refrain from using the margin CSS rule to specify distances between elements.
-- [ ] Positioning is prohibited.
-- [ ] When switching between views, display a different product list view.
-- [ ] The HTML file should remain unchanged; no updates or modifications are allowed.
-- [ ] The permitted list of CSS rules to add to the styles file is as follows:
+- [x] Edit the following files:
+  - [x] css: `/css/ecommerce-page.css`
+- [x] Ensure the layout closely mirrors the mockup.
+- [x] Refrain from using the margin CSS rule to specify distances between elements.
+- [x] Positioning is prohibited.
+- [x] When switching between views, display a different product list view.
+- [x] The HTML file should remain unchanged; no updates or modifications are allowed.
+- [x] The permitted list of CSS rules to add to the styles file is as follows:
   - `border-*`
   - `padding-*`
   - width
